@@ -1,0 +1,21 @@
+#founder {
+    height: 438px;
+    @include First-sections();
+    .container {
+      height: 438px;
+  
+      .title {
+        @include title();
+        width: 700px;
+        p {
+          margin-top: 30px;
+          color: #757575;
+          width: auto;
+          span {
+            color: $bgcolor-black;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }

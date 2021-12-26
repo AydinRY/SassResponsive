@@ -1,0 +1,58 @@
+#contact {
+    height: 746px;
+    @include First-sections();
+    .container {
+      height: 545px;
+  
+      .form-div {
+        width: 700px;
+        height: 357px;
+        margin: 0 auto;
+  
+        button {
+          width: 200px;
+          height: 50px;
+          background-color: #333333;
+          color: #fff;
+          margin-top: 30px;
+          margin-left: 250px;
+          font-weight: 600;
+        }
+      }
+  
+      form input {
+        display: block;
+        border: 1px solid #ddd;
+        width: 100%;
+        height: 45px;
+        padding: 5px 15px;
+        color: #333;
+        box-shadow: none;
+        margin: 5px 0;
+      }
+      form textarea {
+        border: 1px solid #ddd;
+        padding: 5px 15px;
+        width: 700px;
+      }
+  
+      .title {
+        @include title();
+  
+        p {
+          margin-top: 30px;
+          color: #757575;
+        }
+        h2 {
+          color: #757575;
+        }
+        h2:after {
+          @include after();
+          top: 33%;
+        }
+        span {
+          color: #333333;
+        }
+      }
+    }
+  }

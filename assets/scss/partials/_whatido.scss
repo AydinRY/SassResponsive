@@ -1,0 +1,160 @@
+#what-i-do {
+    @include First-sections();
+    height: 746px;
+    .container {
+      height: 545px;
+  
+      .row-4 {
+        display: flex;
+        flex-flow: row wrap;
+        width: 1170px;
+        height: 430px;
+        margin: 0 auto;
+  
+        .box {
+          text-align: center;
+          max-width: 300px;
+          margin: auto;
+          margin-top: 30px;
+          height: 175px;
+  
+          i {
+            font-size: 30px;
+            color: $gray;
+          }
+          h3 {
+            margin-top: 30px;
+            font-weight: 800;
+          }
+          p {
+            overflow: hidden;
+            margin-top: 10px;
+            font-size: 20px;
+            color: $gray;
+            font-weight: 400;
+          }
+        }
+      }
+      .title {
+        @include title();
+  
+        p {
+          @include p();
+        }
+        h2 {
+          color: $gray;
+        }
+  
+        h2:after {
+          @include after();
+          top: 33%;
+        }
+        span {
+          color: $bgcolor-black;
+        }
+      }
+    }
+  }
+  .col-4 {
+    @include col-4();
+  }
+  /* What I Do section end */
+  
+  /* My Work section start */
+  #my-work {
+    height: 946px;
+    @include First-sections();
+  
+    .container {
+      height: 545px;
+  
+      .portfolio {
+        width: 1170px;
+        height: 540px;
+        margin: auto;
+  
+        .works-item {
+          display: flex;
+          flex-flow: row wrap;
+          height: 540px;
+  
+          .col-4 {
+            img {
+              max-width: 100%;
+            }
+            .overlay {
+              background-color: #fff;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 0;
+              height: 0;
+              text-align: center;
+              opacity: 0;
+              transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+  
+              i.fas {
+                font-size: 25px;
+                color: #333;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+            .overlay:hover {
+              opacity: 0.5;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+      .list {
+        width: 1170px;
+        height: 72px;
+        margin: auto;
+  
+        ul {
+          list-style: none;
+          text-align: center;
+          li {
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            width: 70px;
+            color: $gray;
+            font-size: 20px;
+            span {
+              display: block;
+              margin-bottom: 5px;
+            }
+            .all {
+              font-weight: 600;
+              color: #262626;
+            }
+          }
+        }
+      }
+      .title {
+        @include title();
+  
+        p {
+          @include p();
+        }
+  
+        h2 {
+          color: $gray;
+        }
+        h2:after {
+          @include after();
+          top: 33%;
+        }
+        span {
+          color: $bgcolor-black;
+        }
+      }
+    }
+  }
